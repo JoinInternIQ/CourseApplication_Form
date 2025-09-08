@@ -8,7 +8,7 @@ from .models import InternshipApplication
 class InternshipApplicationResource(resources.ModelResource):
     class Meta:
         model = InternshipApplication
-        # list of fields to export (you can adjust)
+        
         
 
 @admin.register(InternshipApplication)
@@ -32,8 +32,5 @@ class InternshipApplicationAdmin(ExportMixin, admin.ModelAdmin):  # Add ExportMi
     ]
 
     ordering = ['name']
-
-   
-
 
 
