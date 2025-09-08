@@ -33,9 +33,6 @@ class InternshipApplicationAdmin(ExportMixin, admin.ModelAdmin):  # Add ExportMi
 
     ordering = ['name']
 
-    def photo_preview(self, obj):
-        if obj.photo:
-            return format_html('<img src="{}" width="100"/>', obj.photo.url)
-        return "-"
-    photo_preview.short_description = "Photo"
+   
+
 
