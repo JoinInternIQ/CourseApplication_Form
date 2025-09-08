@@ -9,7 +9,7 @@ class InternshipApplicationResource(resources.ModelResource):
     class Meta:
         model = InternshipApplication
         # list of fields to export (you can adjust)
-        exclude = ('photo')  # don't export image blobs
+        
 
 @admin.register(InternshipApplication)
 class InternshipApplicationAdmin(ExportMixin, admin.ModelAdmin):  # Add ExportMixin
@@ -34,5 +34,6 @@ class InternshipApplicationAdmin(ExportMixin, admin.ModelAdmin):  # Add ExportMi
     ordering = ['name']
 
    
+
 
 
