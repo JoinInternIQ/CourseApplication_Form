@@ -185,7 +185,7 @@
   <body>
     {% load static %}
     <div class="container">
-      
+      {% comment %} <img src={% static "images/info-tech-logo.jpg" %} class="Topimg"></img> {% endcomment %}
       <h2>Course Application Form</h2>
       <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
@@ -296,11 +296,6 @@
           </select>
         </div>
 
-        <div class="form-group">
-          <label>Upload Your Passport Size Photo(Optional)</label>
-          <input type="file" name="photo" accept="image/*" required/>
-        </div>
-
         <button type="submit"><span>Submit</span></button>
       </form>
 
@@ -323,5 +318,3 @@
     </script>
   </body>
 </html>
-
-
